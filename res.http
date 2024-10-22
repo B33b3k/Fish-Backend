@@ -1,0 +1,44 @@
+### Create a Player
+POST http://localhost:3000/api/players
+Content-Type: application/json
+
+{
+
+  "name": "Bibek",
+  "credits": 100
+}
+
+### Get Player Details
+GET http://localhost:3000/api/players/1
+
+### List All Fish
+GET http://localhost:3000/api/fish
+
+### Catch a Fish
+POST http://localhost:3000/api/catch
+Content-Type: application/json
+
+{
+  "playerId": 1,
+  "fishId": 3
+}
+
+### Log all catches
+GET http://localhost:3000/api/catch/
+
+
+
+
+### add a fish
+POST http://localhost:3000/api/fish
+Content-Type: application/json
+
+{
+  "name": "Tuna",
+  "hitPoints": 10,
+  "frequency": 1,
+  "speed": 10,
+  "payoutMultiplier": 10,
+
+  "price": 10
+}
